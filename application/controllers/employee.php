@@ -165,7 +165,7 @@ class Employee extends CI_Controller {
 			$data['data'] = $this->Model_Employee->profile();
 
 			$this->load->view('templates/header');
-			$this->load->view('pages/employee/profile',$data);
+			$this->load->view('pages/employee/viewProfile',$data);
 			$this->load->view('templates/footer');
 		}
 	}

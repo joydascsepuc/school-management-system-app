@@ -66,7 +66,7 @@ class Employee extends CI_Controller {
 			$id = $this->uri->segment('3');
 			$data['employees'] = $this->Model_Employee->getBasicForEdit($id);
 
-			$this->load->view('templates/header');
+			$this->load->view('templates/header'); 
 			$this->load->view('pages/employee/editDetails',$data);
 			$this->load->view('templates/footer');
 		}
@@ -94,7 +94,7 @@ class Employee extends CI_Controller {
 			$data['data'] = $this->Model_Employee->getSingleQualification($id);
 
 			$this->load->view('templates/header');
-			$this->load->view('pages/employee/editQualification',$data);
+			$this->load->view('pages/employee/eQualification',$data);
 			$this->load->view('templates/footer');
 		}
 	}

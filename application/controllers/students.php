@@ -71,7 +71,7 @@ class Students extends CI_Controller {
 			$data['details'] = $this->Model_Students->getDetailsForEdit($id);
 
 			$this->load->view('templates/header');
-			$this->load->view('pages/students/editDetails',$data);
+			$this->load->view('pages/students/eDetails',$data);
 			$this->load->view('templates/footer');
 		}
 	}
